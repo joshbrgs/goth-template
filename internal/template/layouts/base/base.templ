@@ -1,0 +1,21 @@
+package layouts
+
+
+import (
+  "github.com/joshbrgs/my-portfolio/internal/template/layouts/head"
+)
+
+templ Base(title string) {
+    @layouts.Head(title)
+
+    <body>
+      { children... }
+
+      <!-- Include CSS file -->
+      <link rel="stylesheet" href="/static/styles.css" />
+
+      <!-- Include JS file -->
+      <script src="/static/script.js"></script>
+    </body>
+  }
+

@@ -1,0 +1,21 @@
+
+.bubble {
+  position: absolute;
+  background-color: #4fd1c5; /* Customize the bubble color */
+  width: 40px; /* Customize the bubble size */
+  height: 40px; /* Customize the bubble size */
+  border-radius: 50%; /* Make the div circular */
+  opacity: 0; /* Start with opacity 0 */
+}
+
+/* Animation */
+@keyframes bubbleAnimation {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}

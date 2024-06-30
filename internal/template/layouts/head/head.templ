@@ -1,0 +1,16 @@
+package layouts
+
+
+templ Head(title string) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <!-- Import Tailwind CSS -->
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet" />
+    <!-- Import HTMX script -->
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@^1.6.0/dist/htmx.min.js"></script>
+    <!-- Import GSAP script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  </head>
+}
